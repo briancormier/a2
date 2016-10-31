@@ -1,0 +1,388 @@
+
+
+html {
+  height: 100%;
+}
+body {
+  
+
+
+background: #556270;
+background: -webkit-linear-gradient(to left, #556270 , #FF6B6B); 
+background: linear-gradient(to left, #556270 , #FF6B6B); 
+}
+
+
+#logo {
+  height: 100px;
+  vertical-align: middle;
+    height: 91px;
+    
+              float: left;
+              margin-left: auto;
+              padding: 0 40px;
+}
+
+
+
+
+ul {
+    font-family: 'Roboto Condensed', sans-serif;
+              overflow: auto;
+              list-style-type: none;
+            }
+      
+
+            li {
+              height: 100px;
+              float: right;
+              margin-right: 0px;
+              padding:  31px;
+            }
+      
+
+            
+
+            li a {
+              text-decoration: none;
+              color: #F8F8FF;
+              font: 25px Helvetica, Verdana, sans-serif;
+              text-transform: uppercase;
+
+              -webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+              -ms-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+            }
+      
+
+            li a:hover {
+              color: #FA8072;
+            }
+      
+
+            li.active a {
+              font-weight: bold;
+              color: #333;
+            }
+
+
+.info {
+              color: #777;
+              padding: 3em 20%;
+            }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #F8F8FF;
+    font-size: 5em;
+    text-align: center;
+    padding: .01em;
+    
+}
+
+
+
+#panel,
+#flip {
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#panel {
+  display: none;
+
+}
+
+
+
+.f-btn {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 6px solid #FA8072;
+  overflow: hidden;
+  transition: color .5s ease-in-out;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+
+.f-btn span {
+  font-family: "sofia-pro", sans-serif;
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: 5% 35px;
+}
+
+.f-btn span:before {
+  display: block;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: -20%;
+  z-index: -1;
+  content: '';
+  width: 140%;
+  height: 140%;
+  border-radius: 40px;
+  background: #FA8072;
+  opacity: 0;
+  transform: translate(-100%) rotateY(90deg) scale(0.5);
+  transition: opacity 0.3s ease-in, transform 1s;
+}
+
+.f-btn:hover {
+  
+}
+
+.f-btn:hover span:before {
+  opacity: 1;
+  transform: translate(0) rotate(0deg) scale(1.4);
+}
+
+   /*form-start*/
+
+
+.con-form {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+
+
+
+input,
+textarea {
+  margin: 1% 0 0 0;
+}
+
+footer ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0 10% 0 10%;
+}
+
+footer li {
+  width: 3%;
+  position: relative;
+  list-style-type: none
+}
+
+
+
+footer li:hover {
+  fill: #FA8072;
+}
+
+#foot-social li {
+    
+  margin-right: 197px;
+  
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-family: "sofia-pro", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  height: 38px;
+  position: relative;
+  margin: 0 0 0 0;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 0px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 6px solid #FA8072;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background: #FA8072;
+  outline: 0;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  font-family: "sofia-pro", sans-serif;
+  height: 38px;
+  width: 100%;
+  padding: 6px 10px 6px 10px;
+  background-color: #D1D1D1;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #FA8072;
+  outline: 0;
+  background: #fff;
+}
+
+
+
+
+@import "bourbon";
+$profile-bg-color: linear-gradient(135deg,#6ec575 0,#3b8686 100%);
+/*COMMON CSS*/
+body {
+    position: relative;
+    background: $profile-bg-color;
+    font: normal 14px/1.618em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    font-weight: 500;
+    margin: 0px 0px 5px 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile-card {
+    
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    //centering
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+    @include transform(translateY(-50%));
+    font-family: 'Lato', sans-serif;
+}
+
+.profile-summary {
+    width: auto;
+    height: auto;
+    padding: 20px 20px 0;
+    display: block;
+
+    a {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        margin: 25px 30px;
+
+        > img {
+            width: 120px;
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+            @include transition(box-shadow 0.3s ease);
+        }
+    }
+}
+
+    .profile-nickname {
+        color: #FF5722;
+        font-weight: 500;
+        margin: 0px 0px 5px 0px;
+    }
+}
+
+.profile-bio {
+    width: auto;
+    height: auto;
+    padding: 15px 20px 20px;
+    display: block;
+    color: #333333;
+}
+
+    li {
+        
+        
+        
+
+        a {
+            display: inline-block;
+            color: red;
+            width: 24px;
+            height: 24px;
+            padding: 6px;
+            position: relative;
+        }
+    }
+}
+
